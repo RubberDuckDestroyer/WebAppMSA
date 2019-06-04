@@ -8,13 +8,14 @@ interface IState{
 }
 
 interface IProps{
-    setResults: any}
+    setResults: any
+}
 
 export default class DropArea extends React.Component<IPpops, IState>{
     constructor(props: any) {
         super(props);
         this.state = {
-            imageFiles[],
+            imageFiles: [],
             dropzone: this.onDrop.bind(this)
         };
     }
